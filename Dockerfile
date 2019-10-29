@@ -10,5 +10,4 @@ RUN dotnet publish -c Release -o published
 WORKDIR /krytheravc/published
 ENV APP_TOKEN="<YOUR TOKEN HERE>"
 RUN echo ${APP_TOKEN} > discord-token.txt
-RUN cat discord-token.txt
 RUN dotnet KrytheraVC.dll
